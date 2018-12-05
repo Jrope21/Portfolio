@@ -1,0 +1,270 @@
+/*.logo{
+  background-color:black;
+  width:50px;
+  height:50px;
+
+  
+}*/
+
+/*background-color:#f4f4f4;
+color:#666;
+
+background-color:#282e34;
+color:#ddd;*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body{
+  margin:0px;
+  padding:0px;
+  font-family:Raleway;
+  //color:black;
+}
+
+//Start home page
+
+
+.nav-container{
+  width: 100%;
+  height: 5.6%;
+  background: #0000003f;
+}
+
+.logo{
+  position:absolute;
+  left:0;
+  width:50px;
+  height:50px;
+ // background-color:black;
+  margin:1em;
+  transform:rotate(45deg);
+}
+
+nav{
+  position:absolute;
+  right:0;
+  width:50px;
+  height:50px;
+  //background-color:black;
+  margin:1em;
+}
+
+i{
+  color: white;
+  font-size:30px;
+}
+
+.container-hero-image{
+  position:absolute;
+  background-image: url("/img1.jpg");
+ // background-image: url("https://res.cloudinary.com/dujhdvriy/image/upload/v1542335525/IMG_2315-2.jpg");
+  background-repeat: no-repeat;
+  background-position:-0% 75%;
+  background-size: 597.3px 798.094px;
+  width:100%;
+  height:550px;
+  top:0;
+  z-index:-1;
+ // background: rgba(200, 54, 54, 0.1);
+//background-color:#707070;
+  opacity:.6;
+}
+
+.container-hero-opacity{
+  position:absolute;
+  background-color:#000000;
+  //cool blue color #707070
+  width:100%;
+  height:550px;
+  top:0;
+  z-index:-1;
+  opacity: .90;
+}
+
+main{
+  
+  height:300px;
+  margin-left:40px;
+  
+  
+     span{
+       color:#00CFEA;
+     }
+   p{
+    padding:0px;
+    margin-top:0em;
+    margin-bottom:2em;
+     color:white;
+     font-weight:600;
+     font-size:16px;
+      font-weight:400;
+     /*span{
+       color:#00CFEA
+     }*/
+   }
+  
+   .btn{
+     box-shadow: 1px 1px 1px 1px;
+     border-left: 2px solid #00E2FF;
+          border-right: 2px solid #00E2FF;
+          border-bottom: .1px solid #00E2FF;
+          border-top: 1px solid #00E2FF;
+     padding: .5em 6em .5em 6em;
+     border-radius: 10px;
+     color:white;
+     font-size:20px;
+
+     text-decoration:none;
+    }
+  
+   .h1-container{
+      display:flex;
+     flex-direction:column;
+ // justify-content:center;
+ // height:600px;
+  //margin-left:70px;
+      margin-top:150px;
+     
+        h1{
+         // width:100%
+          display:block;
+          color: rgb(5, 255, 255);
+          //cool blue color rgb(93, 241, 252);
+        font-size:30px;
+// float:left;
+          margin:0em;
+          margin-top: -.1em;
+          padding: 0em;
+          font-weight:400;
+          border-left: 1px solid white;
+          
+          padding-left:.3em;
+        }
+        h1:last-child{
+          border-bottom: 1px solid white;
+          border-width: .08em;
+          padding-bottom: .3em;
+          width: 230px;
+          border-radius: .07em;
+        }
+    }
+}
+
+//end home page
+
+
+//start about me page
+
+.container-about-me{
+  margin-top:6.26em;
+  // background-color:black;
+  margin-bottom:6em;
+    p{
+      color:#413F3F;
+    font-size:14px;
+    margin-right:2em;
+    margin-left:2em;
+      text-align:center;
+       font-weight:400;
+  }
+}
+
+.section-head-brown{
+  width:100%;
+  text-align:center;
+  margin-top:4.3em;
+  color:#413F3F;
+  font-size:30px;
+   font-weight:400;
+}
+
+.bold{
+  color:#00CFEA;
+}
+
+//end about me page
+
+
+.container-what-i-do{
+  width: 100%;
+//background: linear-gradient(#00CFEA, #006875);
+  height:1200px;
+  opacity:.87;
+  //display:flex;
+  //flex-direction: column;
+
+  h1{
+    width:100%;
+    text-align:center;
+    margin-top:1em;
+    color: white;
+    //color: rgb(5, 255, 255);
+    font-size:30px;
+     font-weight:400;
+     z-index: 1;
+     opacity: 1;
+  }
+}
+
+.project-hero-image-container{
+  position:absolute;
+  background-color:#0000008a;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 100%;
+  height: 1200px;
+ 
+  opacity: 1;
+}
+
+.project-opacity-container{
+  position: absolute;
+  background-image: url("/img2.jpg");
+width: 100%;
+height: 1200px;
+background-size: 597.3px 798.094px;
+opacity: 10;
+z-index: -1;
+}
+
+.project-main-content-container{
+
+  width: 100%;
+  //background: blue;
+  height: 100%;
+}
+.project-content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+ 
+ // background-color: red;
+}
+
+.parent{
+  width: auto;
+  
+display: flex;
+flex-direction: column;
+
+}
+
+.project-content-container .project-cols {
+  width: 300px;
+  height: 800px;
+  background-color: red;
+display: flex;
+justify-content: center;
+margin: 1em;
+background: #000000fd;
+}
