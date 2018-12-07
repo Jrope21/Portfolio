@@ -305,6 +305,10 @@ i {
     background-position: -0% 58%;
   }
 }
+
+
+/*Max media Query should be 1280 x 1024*/
+
 /*when entering a media query animate the object over instea of just decreasing size*/
 
 .container-hero-opacity {
