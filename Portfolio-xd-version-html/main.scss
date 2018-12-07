@@ -13,7 +13,12 @@ background-color:#282e34;
 color:#ddd;*/
 
 
+
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*{
+  box-sizing: border-box;
+}
 body{
   margin:0px;
   padding:0px;
@@ -22,7 +27,7 @@ body{
 }
 
 //Start home page
-
+//just a change
 
 .nav-container{
   width: 100%;
@@ -83,7 +88,7 @@ i{
 
 main{
   
-  height:300px;
+  height:250px;
   margin-left:40px;
   
   
@@ -159,6 +164,7 @@ main{
   margin-top:6.26em;
   // background-color:black;
   margin-bottom:6em;
+
     p{
       color:#413F3F;
     font-size:14px;
@@ -188,7 +194,7 @@ main{
 .container-what-i-do{
   width: 100%;
 //background: linear-gradient(#00CFEA, #006875);
-  height:1200px;
+  height:1500px;
   opacity:.87;
   //display:flex;
   //flex-direction: column;
@@ -212,7 +218,7 @@ main{
   background-repeat: no-repeat;
   z-index: -1;
   width: 100%;
-  height: 1200px;
+  height: 1500px;
  
   opacity: 1;
 }
@@ -221,7 +227,7 @@ main{
   position: absolute;
   background-image: url("/img2.jpg");
 width: 100%;
-height: 1200px;
+height: 1500px;
 background-size: 597.3px 798.094px;
 opacity: 10;
 z-index: -1;
@@ -232,6 +238,7 @@ z-index: -1;
   width: 100%;
   //background: blue;
   height: 100%;
+  margin: 0%
 }
 .project-content-container {
   display: -webkit-box;
@@ -261,10 +268,76 @@ flex-direction: column;
 
 .project-content-container .project-cols {
   width: 300px;
-  height: 800px;
+  height: 400px;
   background-color: red;
 display: flex;
 justify-content: center;
 margin: 1em;
 background: #000000fd;
+}
+
+
+
+//start section 3
+.four{
+position: relative;
+
+top: -1.6em;
+height: 225px;
+  background: #ebebeb;
+
+  .promo-container{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h3{
+    margin-left: .58em;
+    margin-right: .58em;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  button{
+    padding: .8em;
+    background-color: #413F3F;
+    box-shadow: 1px 1px 1px 1px #000000fd;
+    border-radius: .3em;
+
+    font-size: 16px;
+    color: white;
+  }
+
+  button:hover{
+    background-color: white;
+    color: #413F3F;
+  }
+
+  div{
+    text-align: center;
+    margin-top:0em; 
+
+    .arrow{
+      font-size: 24px;
+      margin: 1em;
+    }
+  }
+}
+
+
+
+//start section 5
+
+.five{
+  display: flex;
+  justify-content: space-around;
+height: 75px;
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10em;
+  }
 }
