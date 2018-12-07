@@ -16,6 +16,8 @@ color:#ddd;*/
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
+$fontBrown: #413F3F;
+
 *{
   box-sizing: border-box;
 }
@@ -37,12 +39,29 @@ body{
 
 .logo{
   position:absolute;
-  left:0;
-  width:30px;
-  height:30px;
-  background-color:black;
+  left:1.5em;
+  top: -.2em;
+  width:25px;
+  height:25px;
+  //background-color:black;
   margin:1em;
   transform:rotate(45deg);
+  box-shadow: 2px 2px 0 0 rgb(196, 236, 250);
+  border-radius: .3em;
+
+  p{
+    position: relative;
+    top: -1em;
+    left: .3em;
+    font-size: 10px;
+    color: white;
+    transform: rotate(315deg);
+    span:last-child{
+      position: relative;
+      top: .4em;
+      left: -.2em;
+    }
+  }
 }
 
 nav{
