@@ -37,6 +37,94 @@ body{
   background: #0000003f;
 }
 
+//start drop down navigation
+
+/*drop down menu test*/
+/* Dropdown Button */
+.dropbtn-style{
+  background-color: transparent;
+  color:  rgba(0, 0, 0, 0.651);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.hamburger-menu-container .dropdown #dropbtn {
+
+  cursor: pointer;
+
+}
+/* the menu icon is broken and needs to be fixed */
+.hamburger-menu-container .dropdown #dropbtn i{
+  font-size: 28px;
+  color: white;
+
+}
+
+/* Dropdown button on hover & focus */
+
+.hamburger-menu-container .dropdown .dropbtn:hover, .dropbtn:focus {
+  background-color: $fontBrown;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.hamburger-menu-container{
+  display: none;
+  position: relative;
+  left: -1.5em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+  right: -.7em;
+}
+
+@media screen and (max-width: 750px){
+  .hamburger-menu-container{
+   display: flex;
+   justify-content: flex-end;
+   width: 100%;
+  }
+  .nav-links{
+    display: none;
+  }
+  .follow-inside-container{
+    display: none;
+  }
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0000003f;
+  min-width: 200px;
+  box-shadow: 1px 1px 1px 1px black;
+  z-index: 1;
+  right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 13px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #00000069;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*end test*/
+//end drop-down navigation
+
+
 .logo{
   position:absolute;
   left:1.5em;
@@ -322,17 +410,20 @@ height: 225px;
 
   button{
     padding: .8em;
-    background-color: #413F3F;
+    background-color: white;
     box-shadow: 1px 1px 1px 1px #000000fd;
     border-radius: .3em;
 
     font-size: 16px;
-    color: white;
+    color: #00CFEA;
+    font-weight: 800;
+    width: 14em;
   }
 
   button:hover{
-    background-color: white;
-    color: #413F3F;
+    background-color: #00E2FF;
+    color:white;
+    font-weight: 600;
   }
 
   div{
