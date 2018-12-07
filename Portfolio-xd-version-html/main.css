@@ -236,6 +236,77 @@ i {
   opacity: .6;
 }
 
+@media screen and (min-width: 500px) and (max-width: 530px) {
+  .container-hero-image {
+    background-size: 627.165px 837.9987px;
+    background-position: -0% 73.3%;
+  }
+}
+
+@media screen and (min-width: 531px) and (max-width: 560px) {
+  .container-hero-image {
+    background-size: 657.03px 877.9034px;
+    background-position: -0% 71.6%;
+  }
+}
+
+@media screen and (min-width: 561px) and (max-width: 590px) {
+  .container-hero-image {
+    background-size: 686.895px 917.8081px;
+    background-position: -0% 69.9%;
+  }
+}
+
+@media screen and (min-width: 591px) and (max-width: 610px) {
+  .container-hero-image {
+    background-size: 716.76px 957.7128px;
+    background-position: -0% 68.2%;
+  }
+}
+
+@media screen and (min-width: 611px) and (max-width: 640px) {
+  .container-hero-image {
+    background-size: 746.625px 997.6175px;
+    background-position: -0% 66.5%;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 670px) {
+  .container-hero-image {
+    background-size: 776.49px 1037.5222px;
+    background-position: -0% 64.8%;
+  }
+}
+
+@media screen and (min-width: 671px) and (max-width: 700px) {
+  .container-hero-image {
+    background-size: 806.355px 1077.4269px;
+    background-position: -0% 63.1%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 730px) {
+  .container-hero-image {
+    background-size: 836.22px 1117.3316px;
+    background-position: -0% 61.4%;
+  }
+}
+
+@media screen and (min-width: 731px) and (max-width: 760px) {
+  .container-hero-image {
+    background-size: 866.085px 1157.2363px;
+    background-position: -0% 59.7%;
+  }
+}
+
+@media screen and (min-width: 761px) and (max-width: 790px) {
+  .container-hero-image {
+    background-size: 895.95px 1197.141px;
+    background-position: -0% 58%;
+  }
+}
+/*when entering a media query animate the object over instea of just decreasing size*/
+
 .container-hero-opacity {
   position: absolute;
   background-color: #000000;
