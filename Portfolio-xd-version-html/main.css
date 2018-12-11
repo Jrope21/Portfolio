@@ -697,6 +697,8 @@ main .h1-container h1:last-child {
   margin-bottom: 6em;
 }
 
+
+
 .container-about-me p {
   color: #413F3F;
   font-size: 1em;
@@ -710,9 +712,16 @@ main .h1-container h1:last-child {
 @media screen and (min-width: 941px)  {
   .container-about-me {
     margin-bottom: 10em;
-
   }
 }
+
+@media screen and (min-width: 1001px){
+  .container-about-me p {
+    margin-left:4em;
+    margin-right:4em;
+  }
+}
+
 
 .section-head-brown {
   width: 100%;
