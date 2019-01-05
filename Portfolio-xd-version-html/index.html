@@ -39,7 +39,41 @@
                 </div>
               </div>
             </div>
-
+            <script>$('a[href*="#"]')
+                // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function(event) {
+                  // On-page links
+                  if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+                    && 
+                    location.hostname == this.hostname
+                  ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                      // Only prevent default if animation is actually gonna happen
+                      event.preventDefault();
+                      $('html, body').animate({
+                        scrollTop: target.offset().top
+                      }, 1000, function() {
+                        // Callback after animation
+                        // Must change focus!
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) { // Checking if the target was focused
+                          return false;
+                        } else {
+                          $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                          $target.focus(); // Set focus again
+                        };
+                      });
+                    }
+                  }
+                });</script>
       <script>function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
       }
@@ -63,57 +97,24 @@
       </script>
    
 
-   <script>$('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-      // On-page links
-      if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
-        location.hostname == this.hostname
-      ) {
-        // Figure out element to scroll to
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        // Does a scroll target exist?
-        if (target.length) {
-          // Only prevent default if animation is actually gonna happen
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000, function() {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
-              return false;
-            } else {
-              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
-            };
-          });
-        }
-      }
-    });</script>
+
 
     </div>
-  <section class="container-first-section">
+  
  <div class="container-hero-opacity">
   <div class="container-hero-image">
   </header>
-
+  <section class="container-first-section">
      <main>
        <!--<div class="parent-head">-->
     
     <div class="h1-container">
+      <div class="extra">
       <h1>Front End</h1>
 <h1>Developer &</h1>
  <h1>Web Designer.</h1>
   
-
+</div>
     </div>
 <!--
     <div class="h1-right-container">
