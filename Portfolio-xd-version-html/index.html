@@ -39,6 +39,9 @@
                 </div>
               </div>
             </div>
+
+
+            <!--add smoothscroll on click-->
             <script>$('a[href*="#"]')
                 // Remove links that don't actually link to anything
                 .not('[href="#"]')
@@ -74,6 +77,8 @@
                     }
                   }
                 });</script>
+
+                <!--add a dropdown menu on click-->
       <script>function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
       }
@@ -96,8 +101,22 @@
       
       </script>
    
-
-
+<!--navigation animation on scroll-->
+   <script>
+    let scrollpos = window.scrollY
+    const header = document.querySelector(".nav-container")
+  
+    const header_height = header.offsetHeight
+    const add_class_on_scroll = () => header.classList.add("fade-in")
+    const remove_class_on_scroll = () => header.classList.remove("fade-in")
+    window.addEventListener('scroll', function() { 
+      scrollpos = window.scrollY;
+      if (scrollpos >= header_height) { add_class_on_scroll() }
+      else { remove_class_on_scroll() }
+      console.log(scrollpos)
+    })
+  
+  </script>
 
     </div>
   
