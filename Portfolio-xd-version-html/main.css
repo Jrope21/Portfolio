@@ -737,6 +737,7 @@ main .h1-container h1:last-child {
   text-align: center;
   font-weight: 400;
   line-height: 1.4em;
+
 }
 
 @media screen and (min-width: 1041px)  {
@@ -918,7 +919,7 @@ main .h1-container h1:last-child {
   margin: 1em;
   background: #000000fd;
   object-fit: cover;
-
+  overflow: hidden;
 }
 
 
@@ -929,8 +930,9 @@ main .h1-container h1:last-child {
   height: 88%;
   background-size: cover;
   margin: 0em;
- 
+  overflow: hidden;
 }
+
 
 .project-content-container .project-cols .project-btn{
     background-color: transparent;
@@ -945,6 +947,9 @@ main .h1-container h1:last-child {
     height: 11%; 
     padding:13px;
   text-decoration: none;
+  --ease: all 300ms ease;
+  transition: var(--ease);
+  z-index: 2;
 
 }
 
@@ -958,6 +963,7 @@ main .h1-container h1:last-child {
   width: 100%;
   height: 88%;
   background-size: cover;
+  overflow: hidden;
 }
 
 .project-content-container .project-cols .project-image-container-3{
@@ -965,9 +971,44 @@ main .h1-container h1:last-child {
   width: 100%;
   height: 88%;
   background-size: cover;
+  overflow: hidden;
 }
 
 /*end projects images*/
+
+/*start hover project skills popup*/
+.project-tech-used{
+  transform: translateY(360px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.863);
+  --ease: all 300ms ease;
+  transition: var(--ease);
+  z-index: -1;
+
+}
+
+.project-tech-used p{
+  color: #00CFEA;
+}
+/*end hover project skills popup*/
+
+
+.project-content-container .project-cols .project-image-container-1:hover > .project-tech-used{
+  transform: translate(0px)
+}
+
+.project-content-container .project-cols .project-image-container-2:hover > .project-tech-used{
+  transform: translate(0px)
+}
+
+.project-content-container .project-cols .project-image-container-3:hover > .project-tech-used{
+  transform: translate(0px)
+}
 
 .four {
   position: relative;
@@ -1009,6 +1050,9 @@ main .h1-container h1:last-child {
   font-weight: 800;
   width: 14em;
   cursor: pointer;
+  --ease: all 150ms ease;
+  transition: var(--ease);
+  z-index: 2;
 }
 
 .four button:hover {
@@ -1085,6 +1129,9 @@ footer button {
   background-color: transparent;
   color: #6868688a;
   cursor: pointer;
+  --ease: all 400ms ease;
+  transition: var(--ease);
+  z-index: 2;
 }
 
 footer button:hover {
