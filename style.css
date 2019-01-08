@@ -926,7 +926,7 @@ main .h1-container h1:last-child {
 
 /*start projects images*/
 .project-content-container .project-cols .project-image-container-1{
-  background: url("creative-revolt.jpg");
+  background: url("revolt-shot.jpg");
   width: 100%;
   height: 88%;
   background-size: cover;
@@ -964,8 +964,18 @@ color: white;
   background: #00E2FF;
 }
 
+#null{
+  color: #b3b3b328;
+}
+
+#null:hover{
+  color: #b3b3b328;
+  background: #2222228a;
+  cursor: default;
+}
+
 .project-content-container .project-cols .project-image-container-2{
-  background: url("prssa.jpg");
+  background: url("mama-kitchen.jpg");
   width: 100%;
   height: 88%;
   background-size: cover;
@@ -973,7 +983,7 @@ color: white;
 }
 
 .project-content-container .project-cols .project-image-container-3{
-  background: url("mama-kitchen.jpg");
+  background: url("prssa-shot.jpg");
   width: 100%;
   height: 88%;
   background-size: cover;
@@ -1098,7 +1108,7 @@ color: white;
 }
 
 footer {
-  height: 200px;
+  height: 250px;
   background-color: #000000d0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1113,6 +1123,7 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
 }
 
 footer p {
@@ -1143,5 +1154,26 @@ footer button {
 footer button:hover {
   background-color: #00E2FF;
   color: #413F3F;
+}
+
+.breadcrumb{
+height: 25px;
+}
+
+.breadcrumb a{
+  font-size: .8em;
+  color: #6868688a;
+  margin: 2em 1em;
+  --ease: all 70ms ease;
+  transition: var(--ease);
+  text-decoration: none;
+  border-bottom: 1px solid #6868688a;
+}
+
+.breadcrumb a:hover{
+  border-bottom: 1px solid #00E2FF;
+}
+.blue{
+  color: #00E2FF;
 }
 /*# sourceMappingURL=main.css.map */

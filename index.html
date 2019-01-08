@@ -41,42 +41,6 @@
             </div>
 
 
-            <!--add smoothscroll on click-->
-            <script>$('a[href*="#"]')
-                // Remove links that don't actually link to anything
-                .not('[href="#"]')
-                .not('[href="#0"]')
-                .click(function(event) {
-                  // On-page links
-                  if (
-                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-                    && 
-                    location.hostname == this.hostname
-                  ) {
-                    // Figure out element to scroll to
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    // Does a scroll target exist?
-                    if (target.length) {
-                      // Only prevent default if animation is actually gonna happen
-                      event.preventDefault();
-                      $('html, body').animate({
-                        scrollTop: target.offset().top
-                      }, 1000, function() {
-                        // Callback after animation
-                        // Must change focus!
-                        var $target = $(target);
-                        $target.focus();
-                        if ($target.is(":focus")) { // Checking if the target was focused
-                          return false;
-                        } else {
-                          $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                          $target.focus(); // Set focus again
-                        };
-                      });
-                    }
-                  }
-                });</script>
 
                 <!--add a dropdown menu on click-->
       <script>function myFunction() {
@@ -177,7 +141,7 @@
         <div class="parent">
           <div class="project-cols"><div class="project-image-container-1">
             <div class="project-tech-used"> <p>HTML</p> <p>CSS</p> <p>WordPress</p> </div>
-          </div><a href="https://www.creativerevolt.com"  class="project-btn">- view -</a><a href="" class="project-btn"  >&lt;/code&gt;</code></a></div>
+          </div><a href="https://www.creativerevolt.com"  class="project-btn">- view -</a><a href="" class="project-btn" id="null"  >&lt;/code&gt;</code></a></div>
           <div class="project-cols"><div class="project-image-container-2">
               <div class="project-tech-used"> <p>HTML</p> <p>CSS</p> <p>PHP</p> <p>Bootstrap</p> </div>
           </div><a href="https://joshuaroper.com/index.php"  class="project-btn">- view -</a><a href="https://github.com/Jrope21/mamas-messy-kitchen" class="project-btn"  >&lt; code &gt;</code></a></div>
@@ -220,7 +184,49 @@
       <p>INOVATIVE | BOLD | CREATIVE</p>
       <a href="https://www.linkedin.com/in/joshua-roper-b1533a143/"><button>CONNECT ON LINKIN</button></a>
       <a download="resume-pdf.pdf"></a><button>RESUME</button>
+     <div class="breadcrumb">
+       <a href="#home">home</a><span class="blue">>></span>
+       <a href="#about">about</a><span class="blue">>></span>
+       <a href="#projects">projects</a><span class="blue">>></span>
+       <a href="mailto:joshua.micah.roper@gmail.com">contact</a>
+     </div>
     </footer>
 
+            <!--add smoothscroll on click-->
+            <script>$('a[href*="#"]')
+              // Remove links that don't actually link to anything
+              .not('[href="#"]')
+              .not('[href="#0"]')
+              .click(function(event) {
+                // On-page links
+                if (
+                  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+                  && 
+                  location.hostname == this.hostname
+                ) {
+                  // Figure out element to scroll to
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                  // Does a scroll target exist?
+                  if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000, function() {
+                      // Callback after animation
+                      // Must change focus!
+                      var $target = $(target);
+                      $target.focus();
+                      if ($target.is(":focus")) { // Checking if the target was focused
+                        return false;
+                      } else {
+                        $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                        $target.focus(); // Set focus again
+                      };
+                    });
+                  }
+                }
+              });</script>
   </body>
 </html>
