@@ -180,7 +180,7 @@ align-items: center;
   }
 */
 
-.nav-container #nav{
+.nav-container .nav{
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -197,7 +197,7 @@ align-items: center;
  padding: 0em;
 }
 
-.nav-container #nav a{
+.nav-container .nav a{
   text-decoration:none;
   color: white;
   font-size: 14px;
@@ -205,7 +205,7 @@ position: relative;
 top: 2px;
 }
 
-#nav li{
+.nav li{
    letter-spacing: 0px;
   font-weight:400;
   padding-left:1.5em;
@@ -217,11 +217,11 @@ top: 2px;
 
 
 
-#nav li a:hover{
+.nav li a:hover{
   border-bottom: 1px solid #c4ecfa;
 }
 @media screen and (min-width: 751px){
-  .nav-container #nav{
+  .nav-container .nav{
     display: flex;
   }
 }
