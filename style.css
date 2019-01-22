@@ -158,24 +158,25 @@ z-index: 2;
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex; 
+
 position: absolute;
+top: -25px;
   width:100%;
-  height: auto;
+  height: 100%;
   justify-content:flex-end;
   text-decoration: none;
   display: none;
-
+align-items: center;
   z-index:1;
-  margin-top:18px;
+
   padding: 0em;
 }
 
 @media screen and (min-width: 751px) {
   .nav-container nav{
-  
+
     display: flex;
-    height: 45%;
-    align-items: center;
+
   
   
   }
