@@ -151,16 +151,13 @@ z-index: 2;
   position: fixed;
  
 }
-}
+}/*
 .nav-container nav{
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
+
   display: flex; 
 
-position: absolute;
-top: -25px;
+position: fixed;
+
   width:100%;
   height: 100%;
   justify-content:flex-end;
@@ -176,36 +173,39 @@ align-items: center;
   .nav-container nav{
 
     display: flex;
-
-  
+    background: black;
+  height: 100%;
   
   }
   }
+*/
 
-
-.nav-container nav ul{
+.nav-container .nav{
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
-  display: flex; 
- justify-content:space-around;
+  display: none; 
+  flex: 90%;
+ justify-content:flex-end;
 
  margin-right:1rem;
  text-decoration: none;
  list-style-type: none;
- margin:0em;
+
+ margin:1em;
  padding: 0em;
 }
 
-.nav-container nav ul a{
+.nav-container .nav a{
   text-decoration:none;
   color: white;
-  
-
+  font-size: 14px;
+position: relative;
+top: 2px;
 }
 
-nav ul li{
+.nav li{
    letter-spacing: 0px;
   font-weight:400;
   padding-left:1.5em;
@@ -215,16 +215,18 @@ nav ul li{
 
 }
 
-nav ul li a{
-  padding-bottom:.2em;
-
- 
+.nav li:last-child{
+  
 }
 
 nav ul li a:hover{
   border-bottom: 1px solid #c4ecfa;
 }
-
+@media screen and (min-width: 751px){
+  .nav-container .nav{
+    display: flex;
+  }
+}
 
 
 
@@ -351,17 +353,11 @@ nav ul li a:hover{
 @media screen and (min-width:751px){
   .logo{
     position: relative;
-    top: -3.7px;
+    top: -4.7px;
   }
 }
 
-nav {
-  position: absolute;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  margin: 1em;
-}
+
 
 i {
   color: white;
@@ -870,7 +866,7 @@ main .h1-container h1:last-child {
 
 .project-hero-image-container {
   position: absolute;
-  background-color: rgba(3, 3, 3, 0.959);
+  background-color: rgba(3, 3, 3, 0.973);
   background-repeat: no-repeat;
   z-index: -1;
   width: 100%;
