@@ -217,7 +217,7 @@ top: 2px;
 
 
 
-nav ul li a:hover{
+.nav li a:hover{
   border-bottom: 1px solid #c4ecfa;
 }
 @media screen and (min-width: 751px){
