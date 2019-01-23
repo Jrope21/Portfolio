@@ -659,7 +659,7 @@ i {
 @media screen and (min-width: 1400px){
   .container-first-section{
     height:96vh;
-   
+   min-height: 550px;
   }
 }
 main {
