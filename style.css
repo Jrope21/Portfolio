@@ -378,6 +378,8 @@ i {
   background-size:     cover;                      /* <------ */
   background-repeat:   no-repeat;
   background-position: center center;
+  --ease: all 200ms ease;
+  transition: var(--ease);
 }
 
 @media screen and (max-width: 499px){
@@ -636,6 +638,8 @@ i {
   top: 0;
   z-index: -1;
   opacity: .90;
+  --ease: all 200ms ease;
+  transition: var(--ease);
 }
 
 @media screen and (min-width: 1041px)  {
@@ -732,10 +736,12 @@ main .h1-container h1:last-child {
   display:none;
   width:100%;
   height: 70vh;
+  min-height: 550px;
   position:absolute;
   justify-content:flex-end;
   align-items: flex-end;
-  
+  --ease: all 200ms ease;
+  transition: var(--ease);
 }
 .fixed-side-promo-container p{
   position: absolute;
@@ -764,9 +770,11 @@ main .h1-container h1:last-child {
 
 @media screen and (min-width: 1400px)  {
   .fixed-side-promo-container{
-   height: 100vh
+   height: 100vh;
+   min-height: 550px;
   }
   }
+
 
 .container-about-me {
   margin-top: 90px;
@@ -779,6 +787,7 @@ main .h1-container h1:last-child {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 
 
@@ -944,6 +953,7 @@ main .h1-container h1:last-child {
   align-content: center;
   width: 100%;
   height: 100%;
+
 }
 
 
@@ -957,7 +967,7 @@ main .h1-container h1:last-child {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  
+
 }
 
 @media screen and (min-width: 1100px)  {
@@ -982,6 +992,7 @@ main .h1-container h1:last-child {
   background: #000000fd;
   object-fit: cover;
   overflow: hidden;
+
 }
 
 
@@ -1085,6 +1096,48 @@ color: white;
 
 .project-content-container .project-cols .project-image-container-3:hover > .project-tech-used{
   transform: translate(0px)
+}
+
+
+/* project toggle button container*/
+.project-switch-container{
+  position: relative;
+top: 90px; 
+  height: 40px;
+
+  width:6%;
+  min-width:90px;
+}
+
+.switch-btn{
+  height:2em;
+  background-color: transparent;
+    font-family: Raleway;
+    text-align: center;
+    border:none;
+   background: #2222228a;
+    border-radius: 0em;
+    font-size: 16px;
+    color: #b3b3b38a;
+    font-weight: 400;
+    width: 100%;
+box-shadow: none;
+  text-decoration: none;
+  --ease: all 300ms ease;
+  transition: var(--ease);
+  z-index: 2;
+}
+.switch-btn:first-of-type{
+  
+  border-bottom: 1px solid #00CFEA;
+}
+.switch-btn:hover{
+  color: white;
+  background: #00E2FF;
+}
+
+#d-content-container{
+  display: none;
 }
 
 .four {
