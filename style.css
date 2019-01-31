@@ -114,8 +114,38 @@ body {
 }
 
 
+.overlay {
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background:rgb(24, 24, 24);
 
 
+
+  top: 0%:
+  
+}
+
+
+
+.overlay h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2em;
+  color: #05ffff;
+  font-weight: bolder;
+  letter-spacing: 8px;
+
+}
+
+@media screen and (max-width:700px){
+  .overlay h1{
+    letter-spacing: 4px;
+  }
+}
 /*navigation start*/
 
 
@@ -374,7 +404,7 @@ i {
   max-height: 100vh;
   top: 0;
   z-index: -1;
-  opacity: .6;
+  opacity: .4;
   background-size:     cover;                      /* <------ */
   background-repeat:   no-repeat;
   background-position: center center;
@@ -497,7 +527,7 @@ i {
 }
 @media screen and (min-width: 1041px)  {
   .container-hero-image {
-    height: 70vh;
+    height: 100vh;
   }
 }
 @media screen and (min-width: 1400px){
@@ -644,7 +674,7 @@ i {
 
 @media screen and (min-width: 1041px)  {
   .container-hero-opacity {
-    height: 70vh;
+    height: 100vh;
  
   }
 }
@@ -656,7 +686,7 @@ i {
 }
 @media screen and (min-width: 1041px){
   .container-first-section{
-    height:66vh;
+    height:96vh;
    
   }
 }
@@ -735,7 +765,7 @@ main .h1-container h1:last-child {
 .fixed-side-promo-container{
   display:none;
   width:100%;
-  height: 70vh;
+  height: 100vh;
   min-height: 550px;
   position:absolute;
   justify-content:flex-end;
@@ -976,7 +1006,7 @@ main .h1-container h1:last-child {
   }
   }
 
-.project-content-container .project-cols {
+.project-cols {
   width: 300px;
   height: 450px;
   background-color: red;
@@ -992,7 +1022,10 @@ main .h1-container h1:last-child {
   background: #000000fd;
   object-fit: cover;
   overflow: hidden;
-
+  opacity: 0;
+transform: translateX(-20px);
+--ease: all 400ms ease;
+transition: var(--ease);
 }
 
 
@@ -1099,7 +1132,16 @@ color: white;
 }
 
 
-/* project toggle button container*/
+
+
+/* project fade in effect*/
+
+
+.appear-in-projects{
+opacity: 1;
+transform: translateX(0px);
+}
+/* project toggle button container*//*
 .project-switch-container{
   position: relative;
 top: 90px; 
@@ -1138,7 +1180,7 @@ box-shadow: none;
 
 #d-content-container{
   display: none;
-}
+}*/
 
 .four {
   position: relative;

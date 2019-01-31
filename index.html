@@ -12,8 +12,27 @@
                 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   </head>
   <body id="home" >
+
+      <div class="overlay">
+          <h1>DESIGN & CREATE</h1>
+    </div>
+
+    <script>
+            TweenMax.to(".overlay h1", 2, {
+            opacity: 0,
+            y: -60,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.to(".overlay", 2, {
+            delay: .4,
+            top: "-100%",
+            ease: Expo.easeInOut
+      })
+</script>
       <div class="fixed-side-promo-container"><p><span>-</span>Front-end Developer</p></div>
 <header>
   <div class="nav-container">
@@ -136,23 +155,23 @@
               
               </div>
             </div>
-            <div class="project-switch-container">
+           <!-- <div class="project-switch-container">
               <button class="switch-btn" id="website-switch">Websites</button>
            <button href="" class="switch-btn" id="design-switch">Designs</button>
-                </div>
+                </div>-->
 <div id="p-content-container" class="project-main-content-container">
       <h1 class="section-head-white" >RECENT WORK</h1>
 
       <div class="project-content-container">
 
         <div class="parent">
-          <div class="project-cols"><div class="project-image-container-1">
+          <div class="project-cols project1"><div class="project-image-container-1">
             <div class="project-tech-used"> <p>HTML</p> <p>CSS</p> <p>WordPress</p> </div>
           </div><a href="https://www.creativerevolt.com"  class="project-btn" target="_blank">- view -</a><a href="" class="project-btn" id="null"  >&lt;/code&gt;</code></a></div>
-          <div class="project-cols"><div class="project-image-container-2">
+          <div class="project-cols project2"><div class="project-image-container-2">
               <div class="project-tech-used"> <p>HTML</p> <p>CSS</p> <p>PHP</p> <p>Bootstrap</p> </div>
           </div><a href="https://joshuaroper.com/index.php"  class="project-btn" target="_blank">- view -</a><a href="https://github.com/Jrope21/mamas-messy-kitchen" class="project-btn" target="_blank" >&lt; code &gt;</code></a></div>
-          <div class="project-cols"><div class="project-image-container-3">
+          <div class="project-cols project3"><div class="project-image-container-3">
                <div class="project-tech-used"> <p>HTML</p> <p>CSS</p> <p>JavaScript</p> <p>jQuery</p> </div>
             </div>
          
@@ -164,7 +183,7 @@
 
     </div>
 
-    <div id="d-content-container" class="project-main-content-container" style="display: none;">
+   <!-- <div id="d-content-container" class="project-main-content-container" style="display: none;">
       <h1 class="section-head-white" >RECENT DESIGNS</h1>
 
       <div class="project-content-container">
@@ -186,8 +205,8 @@
         </div>
       </div>
 
-    </div>
-
+    </div>-->
+<!--
     <script>
       var designBtn = document.getElementById('design-switch');
       var websiteBtn = document.getElementById('website-switch');
@@ -206,9 +225,56 @@
       
       
       </script>
-
+-->
 
     </section>
+    <script>
+         var project1 = document.querySelector('.project1');
+         var project2 = document.querySelector('.project2');
+         var project3 = document.querySelector('.project3');
+    function appearScroll(){
+   
+  var positionIntro = project1.getBoundingClientRect().top;
+  var screenPosition = window.innerHeight / 1.7;
+
+  if(positionIntro < screenPosition){
+    project1.classList.add('appear-in-projects');
+  }
+
+    }
+
+
+   
+
+  
+    function appearScroll2(){
+   
+  var positionIntro = project2.getBoundingClientRect().top;
+  var screenPosition = window.innerHeight / 1.7;
+
+  if(positionIntro < screenPosition){
+    project2.classList.add('appear-in-projects');
+  }
+    }
+
+
+
+
+        function appearScroll3(){
+   
+   var positionIntro = project3.getBoundingClientRect().top;
+   var screenPosition = window.innerHeight / 1.7;
+ 
+   if(positionIntro < screenPosition){
+     project3.classList.add('appear-in-projects');
+   }
+     }
+
+     window.addEventListener('scroll', appearScroll);
+     window.addEventListener('scroll', appearScroll2);
+     window.addEventListener('scroll', appearScroll3);
+  
+    </script>
 
     <!--<section class="three">
       <div class="skills-container">
