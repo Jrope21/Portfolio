@@ -50,45 +50,9 @@
 
 
 
-                <!--add a dropdown menu on click-->
-      <script>function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-      // Close the dropdown menu if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('#dropbtn')) {
-      
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-      
-      
-      </script>
+
    
-<!--navigation animation on scroll-->
-   <script>
-    let scrollpos = window.scrollY
-    const header = document.querySelector(".nav-container")
-  
-    const header_height = header.offsetHeight
-    const add_class_on_scroll = () => header.classList.add("fade-in")
-    const remove_class_on_scroll = () => header.classList.remove("fade-in")
-    window.addEventListener('scroll', function() { 
-      scrollpos = window.scrollY;
-      if (scrollpos >= header_height) { add_class_on_scroll() }
-      else { remove_class_on_scroll() }
-      console.log(scrollpos)
-    })
-  
-  </script>
+
 
     </div>
   
@@ -129,50 +93,7 @@
       </main>
       
   </div>
-  <script>
-    TweenMax.to(".overlay h1", 2, {
-      delay: .6,
-    opacity: 0,
-    y: -60,
-    ease: Expo.easeInOut
-})
 
-TweenMax.to(".overlay", 2, {
-    delay: 1,
-    top: "-150%",
-    ease: Expo.easeInOut
-})
-TweenMax.to(".h1-container", 2, {
-    delay: 1.5,
-    opacity: 1,
-    x: 1,
-    ease: Expo.easeInOut
-})
-TweenMax.to(".h1-container", 2, {
-    delay: 1.4,
-    opacity: 1,
-    x: 1,
-    ease: Expo.easeInOut
-})
-TweenMax.to(".cc1", 2, {
-    delay: 2.3,
-    opacity: 1,
-    x: -50,
-    ease: Expo.linear
-})
-TweenMax.to(".cc2", 2, {
-    delay: 2.8,
-    opacity: 1,
-    x: -50,
-    ease: Expo.linear
-})
-/*TweenMax.to(".fixed-side-promo-container", 2, {
-    delay: 1.5,
-    opacity: 1,
-    y: -100,
-    ease: Expo.easeInOut
-})*/
-</script>
   </div>
 
   </section>
@@ -259,53 +180,7 @@ TweenMax.to(".cc2", 2, {
 -->
 
     </section>
-    <script>
-         var project1 = document.querySelector('.project1');
-         var project2 = document.querySelector('.project2');
-         var project3 = document.querySelector('.project3');
-    function appearScroll(){
-   
-  var positionIntro = project1.getBoundingClientRect().top;
-  var screenPosition = window.innerHeight / 1.5;
 
-  if(positionIntro < screenPosition){
-    project1.classList.add('appear-in-projects');
-  }
-
-    }
-
-
-   
-
-  
-    function appearScroll2(){
-   
-  var positionIntro = project2.getBoundingClientRect().top;
-  var screenPosition = window.innerHeight / 1.5;
-
-  if(positionIntro < screenPosition){
-    project2.classList.add('appear-in-projects');
-  }
-    }
-
-
-
-
-        function appearScroll3(){
-   
-   var positionIntro = project3.getBoundingClientRect().top;
-   var screenPosition = window.innerHeight / 1.5;
- 
-   if(positionIntro < screenPosition){
-     project3.classList.add('appear-in-projects');
-   }
-     }
-
-     window.addEventListener('scroll', appearScroll);
-     window.addEventListener('scroll', appearScroll2);
-     window.addEventListener('scroll', appearScroll3);
-  
-    </script>
 
     <!--<section class="three">
       <div class="skills-container">
@@ -373,13 +248,143 @@ TweenMax.to(".cc2", 2, {
                     });
                   }
                 }
-              });</script>
+              });
 
-              <script>
+             
                 $(document).ready(function(){
                   $(this).scrollTop(0);
                 });
-              </script>
+              
 
+                              <!--add a dropdown menu on click-->
+   function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('#dropbtn')) {
+      
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      
+      
+
+<!--navigation animation on scroll-->
+
+    let scrollpos = window.scrollY
+    const header = document.querySelector(".nav-container")
+  
+    const header_height = header.offsetHeight
+    const add_class_on_scroll = () => header.classList.add("fade-in")
+    const remove_class_on_scroll = () => header.classList.remove("fade-in")
+    window.addEventListener('scroll', function() { 
+      scrollpos = window.scrollY;
+      if (scrollpos >= header_height) { add_class_on_scroll() }
+      else { remove_class_on_scroll() }
+      console.log(scrollpos)
+    })
+  
+ 
+ 
+        TweenMax.to(".overlay h1", 2, {
+          delay: .6,
+        opacity: 0,
+        y: -60,
+        ease: Expo.easeInOut
+    })
+    
+    TweenMax.to(".overlay", 2, {
+        delay: 1,
+        top: "-150%",
+        ease: Expo.easeInOut
+    })
+    TweenMax.to(".h1-container", 2, {
+        delay: 1.5,
+        opacity: 1,
+        x: 1,
+        ease: Expo.easeInOut
+    })
+    TweenMax.to(".h1-container", 2, {
+        delay: 1.4,
+        opacity: 1,
+        x: 1,
+        ease: Expo.easeInOut
+    })
+    TweenMax.to(".cc1", 2, {
+        delay: 2.3,
+        opacity: 1,
+        x: -50,
+        ease: Expo.linear
+    })
+    TweenMax.to(".cc2", 2, {
+        delay: 2.8,
+        opacity: 1,
+        x: -50,
+        ease: Expo.linear
+    })
+    /*TweenMax.to(".fixed-side-promo-container", 2, {
+        delay: 1.5,
+        opacity: 1,
+        y: -100,
+        ease: Expo.easeInOut
+    })*/
+
+
+
+    var project1 = document.querySelector('.project1');
+    var project2 = document.querySelector('.project2');
+    var project3 = document.querySelector('.project3');
+function appearScroll(){
+
+var positionIntro = project1.getBoundingClientRect().top;
+var screenPosition = window.innerHeight / 1.5;
+
+if(positionIntro < screenPosition){
+project1.classList.add('appear-in-projects');
+}
+
+}
+
+
+
+
+
+function appearScroll2(){
+
+var positionIntro = project2.getBoundingClientRect().top;
+var screenPosition = window.innerHeight / 1.5;
+
+if(positionIntro < screenPosition){
+project2.classList.add('appear-in-projects');
+}
+}
+
+
+
+
+   function appearScroll3(){
+
+var positionIntro = project3.getBoundingClientRect().top;
+var screenPosition = window.innerHeight / 1.5;
+
+if(positionIntro < screenPosition){
+project3.classList.add('appear-in-projects');
+}
+}
+
+window.addEventListener('scroll', appearScroll);
+window.addEventListener('scroll', appearScroll2);
+window.addEventListener('scroll', appearScroll3);
+
+</script>
   </body>
 </html>
