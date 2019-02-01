@@ -812,7 +812,7 @@ main .h1-container h1:last-child {
 
 
 .fixed-side-promo-container .side-content-container .icon-1{
-  background: url(/1x/Asset\ 7-100.jpg) ;
+  background: url(1x/Asset\ 7-100.jpg) ;
   background-size: cover;
   z-index: 1;
   width: 40px;
@@ -822,7 +822,7 @@ main .h1-container h1:last-child {
 }
 
 .fixed-side-promo-container .side-content-container .icon-2{
-  background: url(/1x/Asset\ 5-100.jpg) ;
+  background: url(1x/Asset\ 5-100.jpg) ;
   background-size: cover;
   z-index: 1;
   width: 40px;
