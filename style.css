@@ -413,8 +413,7 @@ i {
   background-size:     cover;                      /* <------ */
   background-repeat:   no-repeat;
   background-position: center center;
-  --ease: all 200ms ease;
-  transition: var(--ease);
+
 }
 
 @media screen and (max-width: 499px){
@@ -673,8 +672,7 @@ i {
   top: 0;
   z-index: -1;
   opacity: .90;
-  --ease: all 200ms ease;
-  transition: var(--ease);
+
 }
 
 @media screen and (min-width: 1041px)  {
